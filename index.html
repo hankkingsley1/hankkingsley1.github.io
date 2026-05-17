@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adam Goodman</title>
+  <title>Adam Goodman — SMS Opt-In</title>
   <style>
     body { font-family: Georgia, serif; max-width: 680px; margin: 60px auto; padding: 0 20px; color: #222; line-height: 1.7; }
     h1 { font-size: 1.4em; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
     h2 { font-size: 1.1em; margin-top: 2em; }
+    .optin-box { background: #f9f9f9; border: 1px solid #ddd; padding: 20px 24px; margin: 2em 0; border-radius: 4px; }
+    .optin-box p { margin: 0 0 12px; font-size: 0.95em; }
+    .optin-box label { font-size: 0.9em; display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+    .optin-box input[type="checkbox"] { margin-top: 3px; flex-shrink: 0; }
+    .keyword { font-family: monospace; background: #eee; padding: 2px 6px; border-radius: 3px; font-size: 1em; }
     a { color: #555; }
     footer { margin-top: 3em; font-size: 0.85em; color: #999; border-top: 1px solid #eee; padding-top: 1em; }
   </style>
@@ -15,6 +20,28 @@
 <body>
   <h1>Adam Goodman</h1>
   <p>CEO, <a href="https://www.goodmans.com">Goodmans Interior Structures</a>. Phoenix, Arizona.</p>
-  <footer><a href="/privacy-policy.html">Privacy Policy &amp; SMS Terms</a></footer>
+
+  <h2>SMS Text Message Opt-In</h2>
+  <p>Adam Goodman sends occasional SMS text messages to contacts who have explicitly opted in. Messages may include follow-ups, appointment reminders, event information, and other personal or professional communications.</p>
+
+  <div class="optin-box">
+    <p><strong>How to opt in:</strong></p>
+    <p>Text <span class="keyword">JOIN</span> to <strong>+1 (602) 396-5565</strong> to subscribe to SMS messages from Adam Goodman.</p>
+    <p>By texting JOIN, you confirm that:</p>
+    <label><input type="checkbox" disabled checked> You are the mobile account holder or have the account holder's permission.</label><br>
+    <label><input type="checkbox" disabled checked> You consent to receive recurring text messages from Adam Goodman at the number you text from.</label><br>
+    <label><input type="checkbox" disabled checked> You understand that message and data rates may apply and message frequency varies.</label><br>
+    <label><input type="checkbox" disabled checked> You have read and agree to the <a href="/terms.html">Terms &amp; Conditions</a> and <a href="/privacy-policy.html">Privacy Policy</a>.</label>
+  </div>
+
+  <h2>Opt-Out / Help</h2>
+  <p>Reply <strong>STOP</strong> at any time to unsubscribe. You will receive one confirmation message and no further messages will be sent. Reply <strong>START</strong> to resubscribe. Reply <strong>HELP</strong> for assistance, or email <a href="mailto:agoodman@goodmans.com">agoodman@goodmans.com</a>.</p>
+
+  <h2>Message Frequency &amp; Rates</h2>
+  <p>Message frequency varies. Standard message and data rates may apply depending on your mobile carrier plan. This program is not a condition of any purchase or agreement.</p>
+
+  <footer>
+    <a href="/terms.html">Terms &amp; Conditions</a> &nbsp;·&nbsp; <a href="/privacy-policy.html">Privacy Policy</a>
+  </footer>
 </body>
 </html>
